@@ -1,0 +1,180 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ancho de pagina */
+
+@media screen and (max-width: 800px) {
+	.contenido-principal {
+		flex-direction: column;
+	}
+}
+
+/* fin de ancho */
+
+body{
+    font-family: Roboto, sans-serif;
+    font-size: 1.4em;
+}
+
+.contenedor{
+    color: white; 
+    display: flex;
+}
+
+.baseTi{
+    background: #333333;
+    padding: 5px 0;
+    margin: 0 auto;
+    overflow: hidden;
+    width: 100%;
+}
+#titulo {
+    letter-spacing: 5px;
+    text-align: center;
+    width: 100%;
+    font-size: 90px;
+}
+
+#logo{
+    width: 120px;
+    height: auto;
+    border-radius: 35px;
+    margin-left: 20px;
+}
+
+#barra{
+    background: #00AEDA;
+    height: 30px;
+    width: 100%;
+}
+
+/* centro de la pagina*/ 
+
+.CentroContenido{
+    background-image: url(img/fondo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+}
+
+h2{
+    font-size: 2rem;
+    line-height: 1.3em;
+}
+p{
+    margin-bottom: 30px;
+}
+#conta{
+    margin-top: 40px;
+    width: 90%;
+    max-width: 850px;
+    margin: 0 auto;
+    color: white;
+}
+
+#video1{
+    height: 300px;
+    width: 380px;
+}
+
+#video2{
+    height: 300px;
+    width: 380px;
+}
+
+/* fin del centro */
+
+
+/* lista de barra*/
+
+.barra{
+    background: #00AEDA;
+    height: auto;
+    font-size: 40px;
+    margin-top: 0px;
+}
+.barra ul{
+    list-style: none;
+    text-align: center;
+}
+
+.barra ul li a{
+    display: block;
+    padding: 0.5rem 5rem;
+    transition: all 0.4s linear;
+    border-radius: 10px;
+}
+
+.barra ul li a:hover {
+    background: #097c99;
+    color: black;
+}
+
+body a{
+    color: white;
+    text-decoration: none;
+}
+
+/* fin de la barra*/
+
+.footer{
+    background: #333333;
+    padding: 4rem 0;
+    text-align: center;
+    color: white;
+}
+
+.container{
+    width: 70%;
+    max-width: 850px;
+    margin: 0 auto;
+    color: white;
+}
+
+/* inicio del carrusel*/
+
+img{
+    border-radius: 300px;
+    height: 300px;
+    width: 500px;
+}
+
+.carrusel__contenedor{
+    position: relative;
+}
+
+.carrusel__anterior,
+.carrusel__siguiente{
+    position: absolute;
+    display: block;
+    width: 30px;
+    height: 30px;
+    border: none;
+    top: calc(50% - 35px);
+    cursor: pointer;
+    line-height: 30px;
+    text-align: center;
+    background: none;
+    color: white;
+    opacity: 20%;
+}
+
+.carrusel__anterior:hover,
+.carrusel__siguiente:hover{
+    opacity: 100%;
+}
+
+.carrusel__anterior{
+    left: 30px;
+}
+.carrusel__siguiente{
+    right: 30px;
+}
+
+.carrusel__lista{
+    width: 85%;
+}
