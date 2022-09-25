@@ -1,0 +1,42 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ancho de pagina */
+
+@media screen and (max-width: 800px) {
+	.contenido-principal {
+		flex-direction: column;
+	}
+}
+body{
+    background-color: rgb(235, 46, 46);
+}
+
+.imagen{
+    width: 100%;
+    bottom: 100px;
+    text-align: center;
+    box-sizing: border-box;
+    border-radius: 20px;
+}
+
+.barra ul{
+    list-style: none;
+    text-align: center;
+}
+
+.barra ul li a{
+    display: block;
+    padding: 0.5rem 5rem;
+    transition: all 0.4s linear;
+    border-radius: 10px;
+    text-decoration: none;
+    color: darkgreen;
+    font-size: 40px;
+}
+.barra ul li a:hover {
+    color: black;
+}
