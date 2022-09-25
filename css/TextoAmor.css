@@ -1,0 +1,46 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ancho de pagina */
+
+@media screen and (max-width: 800px) {
+	.contenido-principal {
+		flex-direction: column;
+	}
+}
+
+@font-face{
+    font-family: "miFuente";
+    src: url("../fonts/Ziggy\ Zoe.ttf");
+}
+
+@font-face{
+    font-family: "Texto";
+    src: url("../fonts/DaddyBee.otf");
+}
+
+body{
+    background-color: rosybrown;
+    
+}
+
+#titu{
+    top: 100px;
+    text-align: center;
+    font-size: 100px;
+    font-family: miFuente;
+    text-shadow: -20px 20px 10px rgba(0, 255, 0, 0.76);
+}
+
+#cuerpo{
+    background-color: chartreuse;
+}
+#mensaje{
+    text-align: center;
+}
+#Love{
+    text-align: center;
+}
